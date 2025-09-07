@@ -6,6 +6,14 @@
 [vue](http://genshin.impact.map.vue.shaoyahu.com.cn/)
 [react](http://genshin.impact.map.react.shaoyahu.com.cn/)
 
+# 地图瓦片资源网盘地址
+
+百度网盘： 通过网盘分享的文件：原神项目地图瓦片
+链接: https://pan.baidu.com/s/1PETZna9nlEH8igz8fthm7Q?pwd=xgfc 提取码: xgfc 
+
+## 地图瓦片使用方法
+
+下载后是一个 map 压缩包，放在项目的 public/images 文件夹中，代码中访问图片路径为 '/images/map/1/0/1.png'
 
 # GenshinImpact-Map-Server
 
