@@ -1,0 +1,38 @@
+# 依赖目录
+**/node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# 地图瓦片太多了不上传在这里了
+**/public/images/map/**
+
+# 构建产物
+**/dist/
+**/build/
+**/.output/
+**/.nuxt/
+
+# 本地环境
+**/.env
+**/.env.local
+**/.env.*.local
+
+# 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,35 @@
+.item-icon-container-active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d3bc8e;
+    border-radius: 6px;
+}
+
+.item-selected-icon-active {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 24px;
+    height: 14px;
+    background-image: url('/images/map-icon/select-icon.png');
+    background-size: cover;
+}
+
+.content-item-name-active {
+    color: #d3bc8e;
+}
+
+.filter-type-item-active {
+    background-image: url('/images/map-icon/filter-item-dec.png'), url('/images/map-icon/filter-item-dec2.png');
+    background-size: 5px 100%, 24px 100%;
+    background-position: 0 0, 5px 0;
+    background-repeat: no-repeat;
+    background-color: #3b4354;
+    padding: 16px 10px !important;
+    color: #d3bc8e;
+}

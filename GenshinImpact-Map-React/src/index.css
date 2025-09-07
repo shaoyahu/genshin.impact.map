@@ -1,0 +1,95 @@
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.force-hidden {
+  display: none !important;
+}
+.point-active {
+  transform: scale(1.2);
+  background-image: url('/images/map-icon/icon-bg-active.png') !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@import "tailwindcss";
+
+
+
+.leaflet-control-zoomslider {
+  position: relative;
+  left: -10px;
+  top: -20px;
+  border: none !important;
+}
+
+.leaflet-touch .leaflet-bar a {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.leaflet-touch .leaflet-bar a:hover {
+  background-color: inherit !important;
+}
+.leaflet-touch .leaflet-bar a:focus {
+  background-color: inherit !important;
+}
+.leaflet-touch .leaflet-bar a:first-child {
+  background-image: url('/images/map-icon/scale-add-icon.png');
+  background-size: cover;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.leaflet-touch .leaflet-bar a:last-child {
+  background-image: url('/images/map-icon/scale-minus-icon.png');
+  background-size: cover;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+
+
+.leaflet-control-zoomslider {
+  position: relative;
+  left: -10px;
+  top: -20px;
+  border: none;
+}
+
+.leaflet-control-zoomslider-wrap {
+  width: 20px;
+}
+
+.leaflet-control-zoomslider-body {
+  width: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.leaflet-control-zoomslider-knob {
+  position: relative;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/map-icon/scale-pro-icon.png');
+  background-size: 100% 100%;
+  cursor: pointer;
+}

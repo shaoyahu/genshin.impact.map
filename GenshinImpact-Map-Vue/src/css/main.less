@@ -1,0 +1,201 @@
+@import './base.less';
+
+#app {
+  .home-view {
+    .leaflet-popup {
+      margin-left: 220px;
+      margin-bottom: -295px;
+      .leaflet-popup-content-wrapper {
+        border-radius: 12px;
+        background-color: #3b4354;
+        box-shadow: none !important;
+        padding: 0;
+        .leaflet-popup-content {
+          width: auto !important;
+          margin: 0;
+          .point-popup-container {
+            width: 375px;
+            font-size: 14px;
+            position: relative;
+            padding: 12px 12px 10px;
+
+            .popup-title {
+              color: #d3bc8e;
+              margin-bottom: 7px;
+            }
+            .popup-pic {
+              width: 355px;
+              height: 200px;
+              border-radius: 6px;
+              background-size: cover;
+            }
+            .point-name {
+              color: #ece5d8;
+              font-size: 14px;
+              font-family: monospace;
+              white-space: pre-wrap;
+              word-break: break-word;
+              margin-top: 10px;
+            }
+            .contributor-container {
+              display: flex;
+              margin-top: 10px;
+
+              .contributor-label {
+                color: #9b9c9f;
+                font-size: 12px;
+                line-height: 30px;
+                margin-right: 10px;
+              }
+
+              .avatar-container {
+                display: flex;
+
+                .avatar-item {
+                  width: 24px;
+                  height: 24px;
+                  background-size: cover;
+                  border-radius: 50%;
+                }
+              }
+            }
+
+            .point-time {
+              font-size: 12px;
+              color: #9b9c9f;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .leaflet-popup-tip-container {
+        display: none;
+      }
+      .leaflet-popup-close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        background-image: url('/images/map-icon/close-icon.png');
+        background-size: cover;
+      }
+    }
+    .leaflet-touch {
+      .leaflet-bar {
+        a {
+          background-color: rgba(0, 0, 0, 0);
+          &:first-child {
+            background-image: url('/images/map-icon/scale-add-icon.png');
+            background-size: cover;
+            border: none;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 10px;
+          }
+          &:last-child {
+            background-image: url('/images/map-icon/scale-minus-icon.png');
+            background-size: cover;
+            border: none;
+            width: 20px;
+            height: 20px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .leaflet-control-zoomslider {
+      position: relative;
+      left: -10px;
+      top: -20px;
+      border: none;
+      .leaflet-control-zoomslider-wrap {
+        width: 20px;
+        .leaflet-control-zoomslider-body {
+          width: 10px;
+          border-radius: 5px;
+          background: rgba(0, 0, 0, 0.4);
+          border: 1px solid hsla(0, 0%, 100%, 0.5);
+          position: relative;
+          margin: 0 auto;
+
+          .leaflet-control-zoomslider-knob {
+            position: relative;
+            left: -6px;
+            width: 20px;
+            height: 20px;
+            background-image: url('/images/map-icon/scale-pro-icon.png');
+            background-size: 100% 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.map-marker-item {
+  .area-mark-item {
+    white-space: nowrap;
+    font-size: 18px;
+    color: #ffffffcc;
+    font-weight: bold;
+    text-shadow: 0 0 3px #333;
+  }
+}
+
+.point-item-container {
+  position: relative;
+  width: 37px;
+  height: 40px;
+  background-size: cover;
+  background-image: url('/images/map-icon/icon-bg.png');
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 3px;
+  // align-items: center;
+
+  &.active {
+    background-image: url('/images/map-icon/icon-bg-active.png');
+    transform: scale(1.2);
+    transform-origin: center bottom;
+    .arrow-icon {
+      display: block;
+    }
+  }
+
+  .point-pic {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-image: url('/images/map-icon/arrow-l.png');
+    background-size: cover;
+
+    &.lb {
+      left: 0;
+      bottom: 6px;
+    }
+    &.lt {
+      left: 0;
+      top: -4px;
+      transform: scaleY(-1);
+    }
+    &.rb {
+      right: 0;
+      bottom: 6px;
+      transform: scaleX(-1);
+    }
+    &.rt {
+      right: 0;
+      top: -4px;
+      transform: scale(-1);
+    }
+  }
+}
